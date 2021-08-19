@@ -1,0 +1,15 @@
+uuid: 8a90af3a-a5c8-4027-bdaa-3ce5f0e201d8
+langcode: pl
+status: true
+dependencies: {  }
+name: node_image_style
+label: 'Node image style'
+effects:
+  85bb9a96-ad03-44b8-b12b-a327ea7968a8:
+    uuid: 85bb9a96-ad03-44b8-b12b-a327ea7968a8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 478
+      upscale: TRUE

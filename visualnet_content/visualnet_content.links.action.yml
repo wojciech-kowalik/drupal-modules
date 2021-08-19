@@ -1,0 +1,10 @@
+entity.visualnet_event.add_form:
+  route_name: entity.visualnet_event.add_form
+  title: 'Add Event'
+  appears_on:
+    - entity.visualnet_event.collection
+entity.visualnet_crm_event.add_form:
+  route_name: entity.visualnet_crm_event.add_form
+  title: 'Add CRM event'
+  appears_on:
+    - entity.visualnet_crm_event.collection

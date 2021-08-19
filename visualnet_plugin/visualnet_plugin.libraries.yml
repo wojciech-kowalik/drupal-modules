@@ -1,0 +1,9 @@
+ckeditor_scripts:
+  version: 1.x
+  js:
+    js/ckeditor-accordion.js: {}
+    js/ckeditor-block.js: {}
+    js/ckeditor-button.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

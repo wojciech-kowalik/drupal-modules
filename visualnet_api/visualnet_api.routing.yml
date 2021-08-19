@@ -1,0 +1,34 @@
+test_pass.api:
+    path: /api/test/pass
+    defaults:
+        _controller: Drupal\visualnet_api\Controller\TestController::testPass
+    requirements:
+        _permission: 'access content'
+
+test_ticket.api:
+    path: /api/test/ticket
+    defaults:
+        _controller: Drupal\visualnet_api\Controller\TestController::testTicket
+    requirements:
+        _permission: 'access content'
+
+test_order.api:
+    path: /api/test/order
+    defaults:
+        _controller: Drupal\visualnet_api\Controller\TestController::testOrder
+    requirements:
+        _permission: 'access content'
+
+test_return_ticket.api:
+    path: /api/test/return/ticket
+    defaults:
+        _controller: Drupal\visualnet_api\Controller\TestController::testReturnTicket
+    requirements:
+        _permission: 'access content'
+
+test_event.api:
+    path: /api/test/event
+    defaults:
+        _controller: Drupal\visualnet_api\Controller\TestController::testEvent
+    requirements:
+        _permission: 'access content'

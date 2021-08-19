@@ -1,0 +1,10 @@
+name: Visualnet User
+type: module
+description: Visualnet User
+core: 8.x
+package: Custom
+'interface translation project': visualnet_user
+'interface translation server pattern': 'modules/custom/%project/translations/%language.po'
+dependencies:
+  - visualnet_api
+  - visualnet_utility

@@ -1,0 +1,9 @@
+name: 'Visualnet Content'
+description: Visualnet Content
+package: Custom
+type: module
+core: 8.x
+'interface translation project': visualnet_content
+'interface translation server pattern': 'modules/custom/%project/translations/%language.po'
+dependencies:
+  - visualnet_utility

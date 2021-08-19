@@ -1,0 +1,19 @@
+<section class="section-show">
+
+    <div class="content">
+
+        <div class="belt-header" style="background-color: {{ section.color }}">{{ section.title }}</div>
+
+        <img class="img-responsive" src="{{ file_url(section.image_uri) }}" alt=""/>
+
+        <div class="description">
+            {{ section.description|raw }}
+        </div>
+
+    </div>
+
+    <a class="off-button colorized smaller" href="/section/{{ section.id }}">
+        {{ 'Show movies from the section'|t }}
+    </a>
+
+</section>

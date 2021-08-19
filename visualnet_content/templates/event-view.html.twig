@@ -1,0 +1,8 @@
+
+{% if type == 'movie' %}
+    {% include '@visualnet_content/partial/event-search.html.twig' %}
+    {% include '@visualnet_content/partial/movie-items.html.twig' %}
+{% else %}
+    {% include '@visualnet_content/partial/default-event-menu.html.twig' %}
+    {% include '@visualnet_content/partial/default-items.html.twig' %}
+{% endif %}

@@ -1,0 +1,53 @@
+msgid "Lorem ipsum"
+msgstr "Lorem ipsum"
+
+msgid "Insert accordion"
+msgstr "Wstaw accordion"
+
+msgid "Accordion title"
+msgstr "Tytuł accordion"
+
+msgid "Accordion content"
+msgstr "Zawartość accordion"
+
+msgid "New accordion title"
+msgstr "Nowy tytuł accordion"
+
+msgid "New accordion content"
+msgstr "Nowa zawartość accordion"
+
+msgid "Add accordion tab before"
+msgstr "Wstaw accordion powyżej"
+
+msgid "Add accordion tab after"
+msgstr "Wstaw accordion poniżej"
+
+msgid "Remove accordion tab"
+msgstr "Usuń accordion"
+
+msgid "Insert block"
+msgstr "Wstaw blok"
+
+msgid "New element"
+msgstr "Nowy element"
+
+msgid "Add block before"
+msgstr "Wstaw blok powyżej"
+
+msgid "Add block after"
+msgstr "Wstaw blok poniżej"
+
+msgid "Remove block"
+msgstr "Usuń blok"
+
+msgid "Block element"
+msgstr "Element"
+
+msgid "Insert button"
+msgstr "Wstaw przycisk"
+
+msgid "Remove button"
+msgstr "Usuń przycisk"
+
+msgid "Change button color"
+msgstr "Zmień kolor przycisku"

@@ -1,0 +1,35 @@
+   
+<section>
+
+    {% for event in entities %}
+
+        {% set text = event.description|render|striptags %}
+        
+        <div class="default-event-teaser col-xs-12">
+
+            <div class="col-xs-12 col-md-6 col-lg-6 left-content">
+                <div class="event-type">{{ event.type | t }}</div>
+                <div class="event-title">{{ event.title }} {{ event.event_start_date }}</div>
+                <div class="event-start-date">
+                    {{ event.start_date | date("d.m", "Europe/Warsaw") }} | {{ event.start_date | date("H:i", "Europe/Warsaw") }}
+                </div>
+                <div class="event-description">{{ text|length > 250 ? text|slice(0, 250) ~ '...' : text }}</div>
+                <div class="more-button">
+                    <div class="col-xs-12 col-md-5 col-lg-5">
+                        <a href="/event/{{event.id}}" class="button">{{ 'Read more' |t }}</a>
+                    </div>
+                    <div class="col-xs-12 col-md-7 col-lg-7">
+                        <a href="/event/{{event.id}}" class="button colorized">{{ 'Buy ticket' |t }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-xs col-md-6 col-lg-6 right-content">
+                <img class="img-responsive" src="{{ event.image.src }}" alt="{{ event.image.alt }}"/>
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</section>

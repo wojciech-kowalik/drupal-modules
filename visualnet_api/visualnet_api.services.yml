@@ -1,0 +1,9 @@
+
+services:
+
+  visualnet.client:
+      class: Drupal\visualnet_api\VisualnetClient
+
+  visualnet.api_service:
+      class: Drupal\visualnet_api\Service\VisualnetApiService
+      arguments: ['@visualnet.client']

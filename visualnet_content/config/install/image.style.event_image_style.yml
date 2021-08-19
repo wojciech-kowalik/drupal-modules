@@ -1,0 +1,14 @@
+uuid: 4eb4752d-5600-48d8-8234-c132ad222850
+langcode: pl
+status: true
+dependencies: {  }
+name: event_image_style
+label: 'Event image style'
+effects:
+  09483559-724b-48dd-ab45-a700d7b11610:
+    uuid: 09483559-724b-48dd-ab45-a700d7b11610
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 385

@@ -1,0 +1,17 @@
+<div class="social-widget-container" role="contentinfo">
+
+    <div class="col-xs-3 belt">
+    </div>
+
+    <div class="col-xs-9 social-link">
+        {% for entity in entities %}
+            <div class="link">
+                <a data-url="{{ entity.url }}{{ entity.share_uri }}{{ url }}" href="#">
+                    <span class="fab {{ entity.fa_icon }}" aria-hidden="true"></span>
+                </a>
+            </div>
+        {% endfor %}
+
+    </div>
+
+</div>

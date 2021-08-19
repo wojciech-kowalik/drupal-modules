@@ -1,0 +1,10 @@
+name: 'Visualnet Social'
+type: module
+description: 'Visualnet Social'
+core: 8.x
+package: 'Custom'
+'interface translation project': visualnet_social
+'interface translation server pattern': 'modules/custom/%project/translations/%language.po'
+configure: visualnet_social.settings
+dependencies:
+  - visualnet_utility

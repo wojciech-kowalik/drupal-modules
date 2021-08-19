@@ -1,0 +1,15 @@
+{{ include('@visualnet_user/nav.html.twig', {tab: 'ticket'}) }}
+
+<div class="ticket-container">
+
+    {% set header = 'Current tickets'|t %}
+    {{ include('@visualnet_user/ticket/table.html.twig', {data: data.current, header: header}) }}
+
+    {% if previous_count > 0 %}
+
+        {% set header = 'History tickets'|t %}
+        {{ include('@visualnet_user/ticket/table.html.twig', {data: data.previous, header: header}) }}
+
+    {% endif %}
+
+</div>

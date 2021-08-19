@@ -1,0 +1,5 @@
+visualnet_user_css:
+  version: 1.x
+  css:
+    theme:
+      css/visualnet_user.css: {}

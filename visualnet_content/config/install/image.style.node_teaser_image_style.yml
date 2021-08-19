@@ -1,0 +1,15 @@
+uuid: 83b60d5e-f106-4e87-ad0b-dfe1eb62a80b
+langcode: pl
+status: true
+dependencies: {  }
+name: node_teaser_image_style
+label: 'Node teaser image style'
+effects:
+  750c94cd-c065-47f4-b338-a4ed8caa583a:
+    uuid: 750c94cd-c065-47f4-b338-a4ed8caa583a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 267
+      height: 150
+      upscale: TRUE

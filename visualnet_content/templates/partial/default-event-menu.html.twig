@@ -1,0 +1,25 @@
+<div class="menu-event-buttons">
+
+  <div class="col-xs-12 upper-buttons">
+    <a class="button {% if type == 'meeting' %}active{% endif %}" href="/type/meeting">{{ 'Meetings' |t }}</a>
+    <a class="button {% if type == 'lecture' %}active{% endif %}" href="/type/lecture">{{ 'Lectures' |t }}</a>
+    <a class="button {% if type == 'special-show' %}active{% endif %}" href="/type/special-show">{{ 'Special shows' |t }}</a>
+    <a class="button {% if type == 'all' %}active{% endif %}" href="/type/all">{{ 'All events' |t }}</a>
+  </div>
+
+  <div class="col-xs-12 lower-buttons">
+    <a class="button smaller {% if sort_field == 'event_start_date' %}active{% endif %}" href="?field=event_start_date&dir=asc">
+      <span class="fas fa-long-arrow-alt-down"></span> {{ 'Day by day' |t }}
+    </a>
+    <a class="button smaller {% if sort_field == 'name' %}active{% endif %}" href="?field=name&dir=asc">
+      <span class="fas fa-long-arrow-alt-down"></span> {{ 'Name' |t }}
+    </a>
+    <a class="button smaller" href="/">
+      {{ 'Schedule view' |t }}
+    </a>
+    <a class="button smaller" href="/type/meeting">
+      <span class="fas fa-times"></span> {{ 'Clear filter' |t }}
+    </a>
+  </div>
+
+</div>

@@ -1,0 +1,66 @@
+<div class="container youtube">
+
+    <div class="header">{{ 'Festival televison'|t }}</div>
+
+    <div id="youtube">
+
+        <div class="col-xs-12 col-md-6 col-lg-6 first">
+
+            <a href="https://www.youtube.com/watch?v={{ first.snippet.resourceId.videoId }}&feature=youtube_gdata_player"
+               target="_blank">
+
+                <div class="image-container">
+                    <div class="minor-header">{{ 'Tv festival'|t }}</div>
+                    <div class="youtube-play">
+                        <div class="arrow-left"></div>
+                    </div>
+                    <img class="img-responsive" src="{{ first.snippet.thumbnails.standard.url }}"> 
+                </div>
+
+            </a>
+
+            <div class="title">{{ first.snippet.title }}</div>
+            <div class="date">{{ first.snippet.publishedAt|date("d.m.Y") }}</div>
+
+
+        </div>
+
+        <div class="hidden-xs col-md-6 col-lg-6">
+
+            {% for entity in entities %}
+
+                <div class="row item">
+                    <div class="col-xs-6 image-container">
+                        <a href="https://www.youtube.com/watch?v={{ entity.snippet.resourceId.videoId }}&feature=youtube_gdata_player" target="_blank"><div class="youtube-play"><div class="arrow-left"></div></div><img class="img-responsive" src="{{ entity.snippet.thumbnails.medium.url }}"> </a> 
+                    </div>
+
+                    <div class="col-xs-6 content-container">
+                        <div class="header">{{ 'Tv festival'|t }}</div>
+                        <div class="title">{{ entity.snippet.title }}</div>
+                        <div class="date">{{ first.snippet.publishedAt|date("d.m.Y") }}</div>
+                    </div>
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <div class="more-button">
+
+        <div class="row">
+            <div class="col-xs-12 content">
+                <a target="_blank" href="https://www.youtube.com/playlist?list={{ hash }}"><button>{{ 'Show all'|t }} {{ title }}</button></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+

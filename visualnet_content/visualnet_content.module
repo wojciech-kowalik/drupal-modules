@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Contains visualnet_content.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function visualnet_content_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the visualnet_api module.
+        case 'help.page.visualnet_content':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Visualnet Content') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+function visualnet_content_views_pre_render($view) {
+
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visualnet_content_theme($existing, $type, $theme, $path)
+{
+    return [
+        'event-view' => [
+            'variables' => [
+                'entities' => null,
+                'type'     => null,
+                'sort_field' => null,
+                'options' => null
+            ],
+        ],
+        'type' => [
+            'template' => 'type',
+            'variables' => [
+                'entity' => null,
+            ],
+        ],
+        'event' => [
+            'variables' => [
+                'event' => null,
+            ],
+        ],
+        'section' => [
+            'variables' => [
+                'section' => null,
+            ],
+        ],
+    ];
+}

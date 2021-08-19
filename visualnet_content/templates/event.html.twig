@@ -1,0 +1,155 @@
+<section class="event row">
+
+    <div class="content">
+
+        <div class="belt-header" style="background-color: {{ event.section.color }}">{{ event.section.name }}</div>
+
+        <div class="title">
+            {{ event.title }}
+        </div>
+
+        <div class="title-original">
+            {{ event.title_original }}
+            <span class="fas fa-circle dot"></span> {{ event.year }} <span
+                    class="fas fa-circle dot"></span> {{ event.duration }} min.
+        </div>
+
+
+        <div class="left-side col-xs-12 col-md-8 col-lg-8">
+
+            <img class="img-responsive" src="{{ event.image.src }}" alt="{{ event.image.alt }}"/>
+
+            <div class="description">
+                {{ event.description|raw }}
+            </div>
+
+            <div class="director-content">
+
+                <div class="belt"></div>
+                <div class="director-name">{{ event.director.name|striptags }}</div>
+                <div class="director-title">{{ 'Director'|t }}</div>
+                <div class="description">{{ event.director.description|raw }}</div>
+
+            </div>
+
+        </div>
+
+        <div class="right-side col-xs-12 col-md-4 col-lg-4">
+
+            {% if event.director.name %}
+                <div class="director">
+                    <div class="header">{{ 'Director'|t }}</div>
+                    <div class="content">{{ event.director.name|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.screenplay %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Screenplay'|t }}</div>
+                    <div class="content">{{ event.screenplay|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.pictures %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Pictures'|t }}</div>
+                    <div class="content">{{ event.pictures|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.editor %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Editor'|t }}</div>
+                    <div class="content">{{ event.editor|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.composer %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Music'|t }}</div>
+                    <div class="content">{{ event.composer|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.cast %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Cast'|t }}</div>
+                    <div class="content">{{ event.cast|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.producer %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Producer'|t }}</div>
+                    <div class="content">{{ event.producer|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.production %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Production'|t }}</div>
+                    <div class="content">{{ event.production|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.event_language %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Language event'|t }}</div>
+                    <div class="content">{{ event.event_language|raw }}</div>
+                </div>
+            {% endif %}
+
+            {% if event.color %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Color'|t }}</div>
+                    <div class="content">{{ event.color|raw }}</div>
+                </div>
+            {% endif %}
+
+            <div class="belt"></div>
+
+            {% if event.prize %}
+                <div class="screenplay">
+                    <div class="header">{{ 'Prize'|t }}</div>
+                    <div class="content">{{ event.prize|raw }}</div>
+                </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</section>
+
+{% if event.repertoires %}
+
+    <section class="repertoire-list container">
+
+        <div class="header col-xs-12">{{ 'Projection list'|t }}</div>
+
+        {% for repertoire in event.repertoires %}
+
+            <div class="repertoire row">
+                <div class="date col-xs-6 col-md-2 col-lg-2">{{ repertoire.getDate|date('d.m.Y') }}</div>
+                <div class="time col-xs-6 col-md-2 col-lg-2">{{ repertoire.getDate|date('H:i') }}</div>
+                <div class="location col-xs-12 col-md-5 col-lg-5">{{ repertoire.hall.location.getName }}
+                    - {{ repertoire.hall.getName }}</div>
+                <div class="action col-xs-12 col-md-3 col-lg-3">
+
+                    {% set button = repertoire.button %}
+
+                    {% if button %}
+
+                        <a href="{{ button.href}}">
+                            <button class="off-button colorized smaller">{{ button.label }}</button>
+                        </a>
+
+                    {% endif %}
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </section>
+
+{% endif %}

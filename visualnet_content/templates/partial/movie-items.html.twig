@@ -1,0 +1,56 @@
+   
+{% for section in entities %}
+   
+   <div class="view-header">
+        {{ section.name }}
+    </div>
+
+    <section>
+
+        {% for event in section.events %}
+
+            <div class="col-xs-12 col-lg-4 col-md-4 movie-teaser">
+
+                <div class="content">
+
+                    <a href="{{ event.language_prefix }}/event/{{ event.id }}">
+
+                        <div class="section" style="background-color: {{ section.color }}">
+                            {{ section.name }}
+                        </div>
+
+                        <img
+                                class="img-responsive"
+                                src="{{ event.image.src }}"
+                                alt="{{ event.image.alt }}"
+                        />
+
+                        <div class="title-container">
+                            <div class="title">{{ event.title }}</div>
+                            <div class="title-original">{{ event.title_original }}</div>
+                        </div>
+
+                        <div class="director">
+                            <div class="header">{{ 'Director'|t }}</div>
+                            <div class="name">{{ event.director.name|striptags }}</div>
+                        </div>
+
+                        <div class="date">{{ event.year }}, {{ event.duration }} min.</div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+        <a class="{% if section.events|length == 0 %}display-none{% endif %} more-button" href="{{ section.language_prefix }}/section/{{ section.id }}">
+            <button class="off-button colorized smaller" style="background-color: {{ section.color }} !important;">
+                {{ 'More from'|t }} {{ section.name }}
+            </button>
+        </a>
+
+    </section>
+
+{% endfor %}    

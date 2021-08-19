@@ -1,0 +1,14 @@
+{
+  "name": "drupal/visualnet_utility",
+  "type": "drupal-module",
+  "description": "Visualnet Utility",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/visualnet_utility",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/visualnet_utility",
+    "source": "http://cgit.drupalcode.org/visualnet_utility"
+  },
+  "require": { }
+}

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - visualnet_sliderview
+name: Articles
+vid: articles
+description: 'Terms for Articles'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,50 @@
+msgid "Lorem ipsum"
+msgstr ""
+
+msgid "Add content"
+msgstr ""
+
+msgid "Cache clear"
+msgstr ""
+
+msgid "Cache cleared"
+msgstr ""
+
+msgid "Language changed"
+msgstr ""
+
+msgid "Manage Linkit profiles."
+msgstr ""
+
+msgid "Configure the responsive slideshow."
+msgstr ""
+
+msgid "Buy ticket"
+msgstr ""
+
+msgid "Program"
+msgstr ""
+
+msgid "About festival"
+msgstr ""
+
+msgid "Regulations for the use of the website"
+msgstr ""
+
+msgid "An error occurred while adding to the newsletter"
+msgstr ""
+
+msgid "Subscribed to the newsletter"
+msgstr ""
+
+msgid "Enter e-mail"
+msgstr ""
+
+msgid "Email address not correct"
+msgstr ""
+
+msgid "This email address has already been assigned to the newsletter"
+msgstr ""
+
+msgid "Apply"
+msgstr ""

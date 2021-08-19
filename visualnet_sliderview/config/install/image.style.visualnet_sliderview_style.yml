@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: sliderview_style
+label: 'Sliderview style'
+effects:
+  sliderview_image_scale_and_crop:
+    uuid: sliderview_image_scale_and_crop
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      upscale: TRUE

@@ -1,0 +1,162 @@
+msgid "Lorem ipsum"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid "Authored by"
+msgstr ""
+
+msgid "The user ID of author of the Event entity"
+msgstr ""
+
+msgid "Event Type"
+msgstr ""
+
+msgid "Event Type tag"
+msgstr ""
+
+msgid "Event Section"
+msgstr ""
+
+msgid "Event Section tag"
+msgstr ""
+
+msgid "Event Image"
+msgstr ""
+
+msgid "Event Image file"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Original title"
+msgstr ""
+
+msgid "Description event"
+msgstr ""
+
+msgid "Production year"
+msgstr ""
+
+msgid "Duration of the event"
+msgstr ""
+
+msgid "Director"
+msgstr ""
+
+msgid "Screenplay"
+msgstr ""
+
+msgid "Pictures"
+msgstr ""
+
+msgid "Editor"
+msgstr ""
+
+msgid "Music"
+msgstr ""
+
+msgid "Cast"
+msgstr ""
+
+msgid "Producer"
+msgstr ""
+
+msgid "Production"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Prize"
+msgstr ""
+
+msgid "Publishing status"
+msgstr ""
+
+msgid "A boolean indicating whether the Event is published"
+msgstr ""
+
+msgid "Visualnet Content Event"
+msgstr ""
+
+msgid "Created"
+msgstr ""
+
+msgid "The time that the entity was created"
+msgstr ""
+
+msgid "Changed"
+msgstr ""
+
+msgid "The time that the entity was last edited"
+msgstr ""
+
+msgid "Year"
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Event list"
+msgstr ""
+
+msgid "List Event entities"
+msgstr ""
+
+msgid "Event settings"
+msgstr ""
+
+msgid "Configure Event entities"
+msgstr ""
+
+msgid "Add Event"
+msgstr ""
+
+msgid "article"
+msgstr ""
+
+msgid "news"
+msgstr ""
+
+msgid "guest"
+msgstr ""
+
+msgid "More from"
+msgstr ""
+
+msgid "Please select event from external crm system"
+msgstr ""
+
+msgid "Director description"
+msgstr ""
+
+msgid "Authored by"
+msgstr ""
+
+msgid "Data has been downloaded"
+msgstr ""
+
+msgid "Projection list"
+msgstr ""
+
+msgid "Buy/Reserve ticket"
+msgstr ""
+
+msgid "Sections"
+msgstr ""
+
+msgid "Show movies from the section"
+msgstr ""
+
+msgid "Search movie"
+msgstr ""
+
+msgid "Search section"
+msgstr ""
+

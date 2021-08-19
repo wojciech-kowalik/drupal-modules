@@ -1,0 +1,19 @@
+<configuration>
+
+    <language>{{ data.global.language }}</language>
+
+    <links>
+
+        {% for link in data.links %}
+
+        <link>
+            <name>{{ link.name }}</name>
+            <color>{{ link.color }}</color>
+            <url>{{ link.url }}</url>
+        </link>
+
+        {% endfor %}
+
+    </links>
+
+</configuration>

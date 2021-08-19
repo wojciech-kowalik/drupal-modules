@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains visualnet_utility.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function visualnet_utility_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the visualnet_utility module.
+    case 'help.page.visualnet_utility':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Visualnet Utility') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visualnet_utility_theme() {
+
+  $theme['mobile'] = [
+    'variables' => ['data' => NULL],
+    'template' => 'mobile',
+  ];
+
+  return $theme;
+}
+
+

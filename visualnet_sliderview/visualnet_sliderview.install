@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Visualnet Sliderview module.
+ */
+
+use Drupal\image\Entity\ImageStyle;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ */
+function visualnet_sliderview_install() {
+
+  $config = \Drupal::service('config.factory')->getEditable('visualnet_sliderview.settings');
+  $config->set('visualnet_sliderview_max_elements', 10);
+  $config->save();
+
+  $vocabulary = "articles";
+  $terms      = [
+      'article',
+      'news',
+      'guest'
+  ];
+
+  foreach ($terms as $term) {
+      Term::create([
+          'parent' => [],
+          'name'   => $term,
+          'vid'    => $vocabulary,
+      ])->save();
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function visualnet_sliderview_uninstall() {
+
+  // Remove responsive_slideshow_style image style.
+  $image_style = ImageStyle::load('sliderview_style');
+  $image_style->delete();
+
+  $config = \Drupal::service('config.factory')->getEditable('visualnet_sliderview.settings');
+  $config->clear('visualnet_sliderview_max_elements');
+  $config->save();
+
+  drupal_flush_all_caches();
+}

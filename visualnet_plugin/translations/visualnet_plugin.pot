@@ -1,0 +1,53 @@
+msgid "Lorem ipsum"
+msgstr ""
+
+msgid "Insert accordion"
+msgstr ""
+
+msgid "Accordion title"
+msgstr ""
+
+msgid "Accordion content"
+msgstr ""
+
+msgid "New accordion title"
+msgstr ""
+
+msgid "New accordion content"
+msgstr ""
+
+msgid "Add accordion tab before"
+msgstr ""
+
+msgid "Add accordion tab after"
+msgstr ""
+
+msgid "Remove accordion tab"
+msgstr ""
+
+msgid "Insert block"
+msgstr ""
+
+msgid "New element"
+msgstr ""
+
+msgid "Add block before"
+msgstr ""
+
+msgid "Add block after"
+msgstr ""
+
+msgid "Remove block"
+msgstr ""
+
+msgid "Block element"
+msgstr ""
+
+msgid "Insert button"
+msgstr ""
+
+msgid "Remove button"
+msgstr ""
+
+msgid "Change button color"
+msgstr ""

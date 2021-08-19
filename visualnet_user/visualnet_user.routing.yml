@@ -1,0 +1,113 @@
+visualnet_user.login:
+  path: login
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::login'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _maintenance_access: TRUE
+    no_cache: TRUE
+
+visualnet_user.register:
+  path: register
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::register'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _maintenance_access: TRUE
+    no_cache: TRUE
+
+visualnet_user.remind_password:
+  path: password
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::remind'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _maintenance_access: TRUE
+    no_cache: TRUE
+
+visualnet_user.activate:
+  path: activate
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::activate'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _maintenance_access: TRUE
+    no_cache: TRUE
+
+visualnet_user.me:
+  path: user/me
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::me'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+visualnet_user.pass:
+  path: user/pass
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::pass'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+visualnet_user.ticket:
+  path: user/ticket
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::ticket'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+visualnet_user.return_ticket:
+  path: user/ticket/{id}/return
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::returnTicket'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+visualnet_user.order:
+  path: user/order
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::order'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+visualnet_user.password:
+  path: user/change/password
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::password'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+visualnet_user.logout:
+  path: logout
+  defaults:
+    _controller: '\Drupal\visualnet_user\Controller\UserController::logout'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: TRUE
+
+#visualnet_user.register_standard:
+#  path: 'register/standard'
+#  defaults:
+#    _form: '\Drupal\visualnet_user\Form\StandardRegisterForm'
+#    _title: 'Register'
+#  requirements:
+#    _user_is_logged_in: 'FALSE'
+#  options:
+#    _maintenance_access: TRUE
+#    no_cache: TRUE

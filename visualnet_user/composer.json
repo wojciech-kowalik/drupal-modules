@@ -1,0 +1,14 @@
+{
+  "name": "drupal/visualnet_user",
+  "type": "drupal-module",
+  "description": "Visualnet user implementation",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/visualnet_user",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/visualnet_user",
+    "source": "http://cgit.drupalcode.org/visualnet_user"
+  },
+  "require": { }
+}

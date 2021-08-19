@@ -1,0 +1,7 @@
+visualnet_social.settings:
+  path: /admin/config/services/visualnet_social
+  defaults:
+    _title: 'Visualnet Social'
+    _form: \Drupal\visualnet_social\Form\VisualnetSocialForm
+  requirements:
+    _permission: 'administer visualnet social'

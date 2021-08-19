@@ -1,0 +1,5 @@
+services:
+
+  visualnet.event_service:
+    class: Drupal\visualnet_content\Service\EventService
+    arguments: ['@entity_type.manager', '@database', '@visualnet.utility_service']

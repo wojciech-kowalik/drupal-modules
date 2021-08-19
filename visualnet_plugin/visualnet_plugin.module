@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains visualnet_plugin.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function visualnet_plugin_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the visualnet_plugin module.
+    case 'help.page.visualnet_plugin':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Visualnet Plugin') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visualnet_plugin_theme() {
+  return [
+    'visualnet_plugin' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function visualnet_plugin_page_attachments_alter(array &$page) {
+
+  // Attaches css assets globally.
+  $page['#attached']['library'][] = 'visualnet_plugin/ckeditor_scripts';
+
+}

@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains visualnet_social.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function visualnet_social_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the visualnet_social module.
+    case 'help.page.visualnet_social':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Visualnet Social') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visualnet_social_theme() {
+return [
+    'youtube' => [
+      'variables' => [
+        'entities' => NULL,
+        'first' => NULL,
+        'hash' => NULL
+      ],
+    ],
+    'widget' => [
+      'variables' => [
+        'entities' => NULL,
+        'url' => NULL
+      ],
+    ],
+  ];
+}

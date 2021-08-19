@@ -1,0 +1,96 @@
+<div class="tab-content">
+    <div class="tab-pane active">
+
+        <div class="header">{{ header }}</div>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th style="width: 30%;">{{ 'Event name'|t }}</th>
+                <th style="width: 10%;">{{ 'Reservation'|t }}</th>
+                <th style="width: 20%;">{{ 'Entry'|t }}</th>
+                <th style="width: 20%;">{{ 'Return'|t }}</th>
+                <th style="width: 35%;">{{ 'Actions'|t }}</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for ticket in data %}
+
+                {% set isReturnPossibility = false %}
+
+                {% if ticket.hasPass and ticket.repertoire.isBeforeEventDate %}
+                    {% if not ticket.returnedAt %}
+                        {% set isReturnPossibility = true %}
+                    {% endif %}
+                {% endif %}
+
+                <tr class="{% if ticket.returnedAt %}returned{% endif %}">
+                    <td>
+                        {% if ticket.returnedAt %}
+                            <div class="error-color">
+                                {{ 'Ticket returned'|t }}
+                            </div>
+                        {% endif %}
+                        <span class="event-name">{{ ticket.repertoire.event.getTitle }}</span>
+                        <div class="location-description">
+                            {{ ticket.repertoire.hall.location.getCity }},
+                            {{ ticket.repertoire.hall.location.getName }},
+                            <b>{{ ticket.repertoire.getDate|date("d.m.Y H:i") }}</b>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="pass-data">
+                            {% if ticket.hasPass %}
+                                <span class="fas fa-check-circle"></span>
+                            {% else %}
+                                <span class="error-color fas fa-times-circle"></span>
+                            {% endif %}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="entered-data">
+                            {% if ticket.getEnteredAt %}
+                                {{ ticket.getEnteredAt|date("d.m.Y H:i") }}
+                            {% else %}
+                                <span class="error-color fas fa-times-circle"></span>
+                            {% endif %}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="returned-data">
+                            {% if ticket.getReturnedAt %}
+                                {{ ticket.getReturnedAt|date("d.m.Y H:i") }}
+                            {% else %}
+                                <span class="error-color fas fa-times-circle"></span>
+                            {% endif %}
+                        </span>
+                    </td>
+                    <td>
+
+                        {% if isReturnPossibility %}
+
+                            <a href="{{ path('visualnet_user.return_ticket', {'id': ticket.id}) }}">
+                                <button class="off-button colorized smaller">
+                                    <span class="fas fa-undo"></span> {{ 'Return ticket'|t }}
+                                </button>
+                            </a>
+
+                        {% endif %}
+
+                    </td>
+                </tr>
+
+            {% else %}
+                <tr>
+                    <td colspan="5">
+                        {{ 'No data'|t }}
+                    </td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

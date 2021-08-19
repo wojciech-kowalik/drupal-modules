@@ -1,0 +1,44 @@
+msgid "Forgot your password?"
+msgstr ""
+
+msgid "Wrong registration data"
+msgstr ""
+
+msgid "Wrong email"
+msgstr ""
+
+msgid "User is already registered"
+msgstr ""
+
+msgid "Customer doesn't exists"
+msgstr ""
+
+msgid "Customer with this email not exists"
+msgstr ""
+
+msgid "There is an error with user activating"
+msgstr ""
+
+msgid "User has been successfully activated"
+msgstr ""
+
+msgid "Wrong login data"
+msgstr ""
+
+msgid "User has been logged out"
+msgstr ""
+
+msgid "Data has been saved"
+msgstr ""
+
+msgid "Ticket has been returned"
+msgstr ""
+
+msgid "Wrong previous password"
+msgstr ""
+
+msgid "Passwords doesn't match"
+msgstr ""
+
+msgid "Customer exists"
+msgstr ""

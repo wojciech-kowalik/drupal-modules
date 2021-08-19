@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+
+msgid "News"
+msgstr "Aktualności"
+
+msgid "Articles"
+msgstr "Artykuły"
+
+msgid "Guests"
+msgstr "Goście festiwalu"
+
+msgid "ExampleSliderBlock"
+msgstr "PrzykładowySliderBlock"
+
+msgid "Show all"
+msgstr "Zobacz wszystkie"
+
+msgid "Configure slider view"
+msgstr "Zarządzanie konfiguracją slidera widoku"
+
+msgid "Show all guests"
+msgstr "Zobacz wszystkich gości"

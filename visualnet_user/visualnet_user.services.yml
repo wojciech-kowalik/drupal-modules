@@ -1,0 +1,10 @@
+services:
+
+  visualnet.user_route_subscriber:
+    class: Drupal\visualnet_user\RouteSubscriber\UserRouteSubscriber
+    tags:
+      - {name: event_subscriber}
+
+  visualnet.user_service:
+    class: Drupal\visualnet_user\Service\UserService
+    arguments: ['@entity_type.manager', '@visualnet.api_service', '@visualnet.utility_service']

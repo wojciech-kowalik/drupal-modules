@@ -1,0 +1,203 @@
+msgid "Lorem ipsum"
+msgstr "lorem ipsum"
+
+msgid "Event"
+msgstr "Wydarzenie"
+
+msgid "Authored by"
+msgstr ""
+
+msgid "The user ID of author of the Event entity"
+msgstr ""
+
+msgid "Event Type"
+msgstr "Typ wydarzenia"
+
+msgid "Event Type tag"
+msgstr "Proszę wybrać typ wydarzenia"
+
+msgid "Event Section"
+msgstr "Sekcja wydarzenia"
+
+msgid "Event Section tag"
+msgstr "Proszę wybrać sekcję dla wydarzenia"
+
+msgid "Event Image"
+msgstr "Zdjęcie"
+
+msgid "Event Image file"
+msgstr "Proszę wybrać zdjęcie dla wydarzenia"
+
+msgid "Title"
+msgstr "Tytuł"
+
+msgid "Original title"
+msgstr "Tytuł originalny"
+
+msgid "Description event"
+msgstr "Opis wydarzenia"
+
+msgid "Production year"
+msgstr "Rok produkcji"
+
+msgid "Duration of the event"
+msgstr "Czas trwania"
+
+msgid "Director"
+msgstr "Reżyseria"
+
+msgid "Screenplay"
+msgstr "Scenariusz"
+
+msgid "Pictures"
+msgstr "Zdjęcia"
+
+msgid "Editor"
+msgstr "Montaż"
+
+msgid "Music"
+msgstr "Muzyka"
+
+msgid "Cast"
+msgstr "Obsada"
+
+msgid "Producer"
+msgstr "Producent"
+
+msgid "Production"
+msgstr "Produkcja"
+
+msgid "Language"
+msgstr "Język"
+
+msgid "Color"
+msgstr "Barwa"
+
+msgid "Prize"
+msgstr "Nagrody"
+
+msgid "Publishing status"
+msgstr ""
+
+msgid "A boolean indicating whether the Event is published"
+msgstr ""
+
+msgid "Visualnet Content Event"
+msgstr "Użyj wydarzeń dla filmów, wydarzeń festiwalowych"
+
+msgid "Created"
+msgstr ""
+
+msgid "The time that the entity was created"
+msgstr ""
+
+msgid "Changed"
+msgstr ""
+
+msgid "The time that the entity was last edited"
+msgstr ""
+
+msgid "Year"
+msgstr "Rok"
+
+msgid "Image"
+msgstr "Obrazek"
+
+msgid "Event list"
+msgstr "Wydarzenia lista"
+
+msgid "List Event entities"
+msgstr "Zarządzanie listą wydarzeń"
+
+msgid "Event settings"
+msgstr "Wydarzenia ustawienia"
+
+msgid "Configure Event entities"
+msgstr "Zarządzanie konfiguracją wydarzenia"
+
+msgid "Add Event"
+msgstr "Dodaj wydarzenie"
+
+msgid "article"
+msgstr "Artykuły"
+
+msgid "news"
+msgstr "Aktualności"
+
+msgid "guest"
+msgstr "Goście"
+
+msgid "More from"
+msgstr "Więcej z"
+
+msgid "Please select event from external crm system"
+msgstr "Proszę wybrać wydarzenie z zewnętrznego systemu CRM"
+
+msgid "Director description"
+msgstr "Opis reżysera"
+
+msgid "Authored by"
+msgstr "Stworzony przez"
+
+msgid "Data has been downloaded"
+msgstr "Dane zostały pobrane"
+
+msgid "Projection list"
+msgstr "Lista projekcji"
+
+msgid "Buy/Reserve ticket"
+msgstr "Kup/Rezerwuj bilet"
+
+msgid "Language event"
+msgstr "Język"
+
+msgid "Sections"
+msgstr "Sekcje"
+
+msgid "Show movies from the section"
+msgstr "Pokaż filmy z sekcji"
+
+msgid "Search movie"
+msgstr "Szukaj filmu"
+
+msgid "Search section"
+msgstr "Szukaj sekcji"
+
+msgid "Meetings"
+msgstr "Spotkania"
+
+msgid "Lectures"
+msgstr "Wykłady"
+
+msgid "Special shows"
+msgstr "Pokazy specjalne"
+
+msgid "All events"
+msgstr "Wszystkie wydarzenia"
+
+msgid "meeting"
+msgstr "Spotkanie"
+
+msgid "lecture"
+msgstr "Wykład"
+
+msgid "special show"
+msgstr "Pokaz specjalny"
+
+msgid "Day by day"
+msgstr "Dzień po dniu"
+
+msgid "Schedule view"
+msgstr "Widok harmonogramu"
+
+msgid "Start event date"
+msgstr "Data startu wydarzenia"
+
+msgid "Read more"
+msgstr "Czytaj więcej"
+
+msgid "Clear filter"
+msgstr "Wyczyść filtr"
+
+msgid "Search section"
+msgstr "Szukaj sekcji"

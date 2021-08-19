@@ -1,0 +1,8 @@
+visualnet_sliderview.sliderview_assets:
+  version: 1.0
+  js:
+    js/visualnet_sliderview.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

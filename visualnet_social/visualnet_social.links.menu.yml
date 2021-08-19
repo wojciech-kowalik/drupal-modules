@@ -1,0 +1,5 @@
+visualnet_social.settings:
+  route_name: visualnet_social.settings
+  title: 'Visualnet Social'
+  description: 'Configure social media'
+  parent: system.admin_config_services

@@ -1,0 +1,11 @@
+name: 'Visualnet Plugin'
+type: module
+description: 'Visualnet Plugin'
+core: 8.x
+package: 'Custom'
+libraries:
+  - visualnet_plugin/ckeditor_scripts
+'interface translation project': visualnet_plugin
+'interface translation server pattern': 'modules/custom/%project/translations/%language.po'
+dependencies:
+  - ckeditor

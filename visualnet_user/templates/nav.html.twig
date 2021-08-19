@@ -1,0 +1,7 @@
+<ul class="nav nav-tabs user-tabs">
+    <li {% if tab == 'profile' %}class="active"{% endif %}><a href="{{ path('visualnet_user.me') }}">Profil</a></li>
+    <li {% if tab == 'pass' %}class="active"{% endif %}><a href="{{ path('visualnet_user.pass') }}">Karnety</a></li>
+    <li {% if tab == 'ticket' %}class="active"{% endif %}><a href="{{ path('visualnet_user.ticket') }}">Bilety/Rezerwacje</a></li>
+    <li {% if tab == 'order' %}class="active"{% endif %}><a href="{{ path('visualnet_user.order') }}">Historia zamówień</a></li>
+    <li {% if tab == 'password' %}class="active"{% endif %}><a href="{{ path('visualnet_user.password') }}">Zmiana hasła</a></li>
+</ul>

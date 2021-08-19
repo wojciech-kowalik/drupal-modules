@@ -1,0 +1,8 @@
+visualnet_social.assets:
+  version: 1.0
+  js:
+    js/visualnet_social.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

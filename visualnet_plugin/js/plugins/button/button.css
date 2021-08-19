@@ -1,0 +1,20 @@
+/* Small CSS to differentiate tabs durng edition */
+div.ckeditor-button {
+  border: dashed 2px #CD024A;
+  text-transform: uppercase;
+  font-size: smaller;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+div.colorized {
+  background-color: #CD024A;
+  color: #fff;
+}
+
+div.colorized a{
+  color: #fff;
+}

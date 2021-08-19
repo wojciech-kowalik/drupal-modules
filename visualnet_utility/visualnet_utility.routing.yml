@@ -1,0 +1,20 @@
+cc_shortcut:
+    path: admin/cache/clear
+    defaults:
+        _controller: Drupal\visualnet_utility\Controller\CacheClearShortcutController::make
+    requirements:
+        _permission: 'access content'
+
+language_shortcut:
+    path: admin/change/language
+    defaults:
+        _controller: Drupal\visualnet_utility\Controller\LanguageShortcutController::change
+    requirements:
+        _permission: 'access content'
+
+mobile_configuration:
+    path: mobile/configuration
+    defaults:
+        _controller: Drupal\visualnet_utility\Controller\AppConfigurationController::mobile
+    requirements:
+        _access: 'TRUE'

@@ -1,0 +1,44 @@
+msgid "Forgot your password?"
+msgstr "Zapomniałeś hasła?"
+
+msgid "Wrong registration data"
+msgstr "Złe dane rejestracji"
+
+msgid "Wrong email"
+msgstr "Nieprawidłowy adres email"
+
+msgid "User is already registered"
+msgstr "Użytkownik już został zarejestrowany"
+
+msgid "Customer doesn't exists"
+msgstr "Klient nie istnieje"
+
+msgid "Customer with this email not exists"
+msgstr "Klient z takim adresem email nie istnieje"
+
+msgid "There is an error with user activating"
+msgstr "Wystąpił problem z aktywacją użytkownika"
+
+msgid "User has been successfully activated"
+msgstr "Użytkownik został aktywowany"
+
+msgid "Wrong login data"
+msgstr "Złe dane logowania"
+
+msgid "User has been logged out"
+msgstr "Użytkownik został wylogowany"
+
+msgid "Data has been saved"
+msgstr "Dane zostały zapisane"
+
+msgid "Ticket has been returned"
+msgstr "Bilet został poprawnie zwrócony"
+
+msgid "Wrong previous password"
+msgstr "Stare hasło jest niepoprawne"
+
+msgid "Passwords doesn't match"
+msgstr "Hasła nie są jednakowe"
+
+msgid "Customer exists"
+msgstr "Klient z takim adresem email już istnieje"

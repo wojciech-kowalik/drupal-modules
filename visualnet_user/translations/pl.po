@@ -1,0 +1,83 @@
+msgid "Lorem ipsum"
+msgstr "lorem ipsum"
+
+msgid "User firstname"
+msgstr "Imię"
+
+msgid "User lastname"
+msgstr "Nazwisko"
+
+msgid "Old password"
+msgstr "Stare hasło"
+
+msgid "New password"
+msgstr "Nowe hasło"
+
+msgid "Repeated new password"
+msgstr "Powtórz nowe hasło"
+
+msgid "Register by pass"
+msgstr "Rejestracja karnetem"
+
+msgid "Firstname"
+msgstr "Imię"
+
+msgid "Lastname"
+msgstr "Nazwisko"
+
+msgid "Pass number"
+msgstr "Numer karnetu"
+
+msgid "Thank you for registering. The first part of the process has been completed successfully. We have sent you an e-mail with an instruction describing what to do next"
+msgstr "Dziękujemy za rejestrację. Pierwszy etap procesu przebiegł pomyślnie i wysłaliśmy Ci maila z instrukcją co robić dalej"
+
+msgid "Repeat password"
+msgstr "Powtórz hasło"
+
+msgid "Account activate"
+msgstr "Aktywacja konta"
+
+msgid "Account activate"
+msgstr "Aktywacja konta"
+
+msgid "Thank you for registering. The first part of the process has been completed successfully"
+msgstr "Dziękujemy, proces rejestracji przebiegł pomyślnie i możesz się teraz zalogować"
+
+msgid "Repeated password is not the same"
+msgstr "Hasła nie są jednakowe"
+
+msgid "User login header"
+msgstr "Logowanie"
+
+msgid "I forgot my password"
+msgstr "Nie pamiętam hasła"
+
+msgid "Current tickets"
+msgstr "Aktualne bilety"
+
+msgid "History tickets"
+msgstr "Minione bilety"
+
+msgid "No data"
+msgstr "Brak danych"
+
+msgid "Return ticket"
+msgstr "Zwrot biletu"
+
+msgid "Event name"
+msgstr "Nazwa wydarzenia"
+
+msgid "Reservation"
+msgstr "Rezerwacja"
+
+msgid "Entry"
+msgstr "Wejście"
+
+msgid "Return"
+msgstr "Zwrot"
+
+msgid "Ticket returned"
+msgstr "Bilet zwrócony"
+
+msgid "Thank you, the registration process was successful and you can log in now"
+msgstr "Dziękujemy, proces rejestracji zakończył się i możesz się teraz zalogować"

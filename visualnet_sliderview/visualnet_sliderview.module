@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains visualnet_social.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function visualnet_sliderview_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        case 'help.page.visualnet_sliderview':
+            return t('Visualnet Sliderview module');
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visualnet_sliderview_theme()
+{
+    return [
+        'sliderview' => [
+            'variables' => [
+                'entities' => null,
+                'node' => null,
+                'title' => null,
+                'language_prefix' => null
+            ],
+        ],
+    ];
+}

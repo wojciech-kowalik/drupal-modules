@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+
+msgid "News"
+msgstr ""
+
+msgid "Articles"
+msgstr ""
+
+msgid "Guests"
+msgstr ""
+
+msgid "ExampleSliderBlock"
+msgstr ""
+
+msgid "Show all"
+msgstr ""
+
+msgid "Configure slider view"
+msgstr ""
+
+msgid "Show all guests"
+msgstr ""

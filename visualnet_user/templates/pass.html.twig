@@ -1,0 +1,28 @@
+{{ include('@visualnet_user/nav.html.twig', {tab: 'pass'}) }}
+
+<div class="tab-content">
+    <div class="tab-pane active">
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Kod</th>
+                <th>Nazwa</th>
+                <th>Cena</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for pass in data %}
+                <tr>
+                    <td>{{ pass.getBarcode }} </td>
+                    <td>{{ pass.getDefinition.getName }} </td>
+                    <td>{{ pass.getDefinition.getPrice }} zł</td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

@@ -1,0 +1,7 @@
+visualnet_sliderview.settings:
+  path: /admin/config/services/visualnet_sliderview
+  defaults:
+    _title: 'Visualnet Sliderview'
+    _form: \Drupal\visualnet_sliderview\Form\VisualnetSliderviewForm
+  requirements:
+    _permission: 'administer visualnet sliderview'

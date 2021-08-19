@@ -1,0 +1,77 @@
+msgid "Lorem ipsum"
+msgstr ""
+
+msgid "User firstname"
+msgstr ""
+
+msgid "User lastname"
+msgstr ""
+
+msgid "Old password"
+msgstr ""
+
+msgid "New password"
+msgstr ""
+
+msgid "Repeated new password"
+msgstr ""
+
+msgid "Register by pass"
+msgstr ""
+
+msgid "Firstname"
+msgstr ""
+
+msgid "Lastname"
+msgstr ""
+
+msgid "Pass number"
+msgstr ""
+
+msgid "Thank you for registering. The first part of the process has been completed successfully. We have sent you an e-mail with an instruction describing what to do next"
+msgstr ""
+
+msgid "Repeat password"
+msgstr ""
+
+msgid "Thank you for registering. The first part of the process has been completed successfully"
+msgstr ""
+
+msgid "Repeated password is not the same"
+msgstr ""
+
+msgid "User login header"
+msgstr ""
+
+msgid "I forgot my password"
+msgstr ""
+
+msgid "Current tickets"
+msgstr ""
+
+msgid "History tickets"
+msgstr ""
+
+msgid "No data"
+msgstr ""
+
+msgid "Return ticket"
+msgstr ""
+
+msgid "Event name"
+msgstr ""
+
+msgid "Reservation"
+msgstr ""
+
+msgid "Entry"
+msgstr ""
+
+msgid "Return"
+msgstr ""
+
+msgid "Ticket returned"
+msgstr ""
+
+msgid "Thank you, the registration process was successful and you can log in now"
+msgstr ""

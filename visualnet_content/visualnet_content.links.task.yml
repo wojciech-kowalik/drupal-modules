@@ -1,0 +1,44 @@
+# Event routing definition
+visualnet_event.settings_tab:
+  route_name: visualnet_event.settings
+  title: 'Settings'
+  base_route: visualnet_event.settings
+
+entity.visualnet_event.canonical:
+  route_name: entity.visualnet_event.canonical
+  base_route: entity.visualnet_event.canonical
+  title: 'View'
+
+entity.visualnet_event.edit_form:
+  route_name: entity.visualnet_event.edit_form
+  base_route: entity.visualnet_event.canonical
+  title: 'Edit'
+
+entity.visualnet_event.delete_form:
+  route_name:  entity.visualnet_event.delete_form
+  base_route:  entity.visualnet_event.canonical
+  title: Delete
+  weight: 10
+
+# Visualnet crm event routing definition
+visualnet_crm_event.settings_tab:
+  route_name: visualnet_crm_event.settings
+  title: 'Settings'
+  base_route: visualnet_crm_event.settings
+
+entity.visualnet_crm_event.canonical:
+  route_name: entity.visualnet_crm_event.canonical
+  base_route: entity.visualnet_crm_event.canonical
+  title: 'View'
+
+entity.visualnet_crm_event.edit_form:
+  route_name: entity.visualnet_crm_event.edit_form
+  base_route: entity.visualnet_crm_event.canonical
+  title: 'Edit'
+
+entity.visualnet_crm_event.delete_form:
+  route_name:  entity.visualnet_crm_event.delete_form
+  base_route:  entity.visualnet_crm_event.canonical
+  title: Delete
+  weight: 10
+

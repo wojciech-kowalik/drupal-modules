@@ -1,0 +1,14 @@
+{
+  "name": "drupal/visualnet_plugin",
+  "type": "drupal-module",
+  "description": "Visualnet Plugin",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/visualnet_plugin",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/visualnet_plugin",
+    "source": "http://cgit.drupalcode.org/visualnet_plugin"
+  },
+  "require": { }
+}

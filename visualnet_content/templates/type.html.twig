@@ -1,0 +1,25 @@
+<article id="{{ entity.type }}" {{ attributes.addClass('type') }}>
+
+    <div class="content">
+
+        <div class="title">
+            {{ entity.title }}
+        </div>
+
+        <div class="image">
+            <img class="img-responsive" src="{{ entity.image_url }}" alt="{{ entity.title }}">
+        </div>
+
+        <div class="summary">
+            {{ entity.body_summary }}
+        </div>
+
+        <div class="body">
+            {% autoescape false %}
+                {{ entity.body_value }}
+            {% endautoescape %}
+        </div>
+
+    </div>
+
+</article>

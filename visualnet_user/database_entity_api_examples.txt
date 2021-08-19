@@ -1,0 +1,39 @@
+
+// $this->entityManager = $container->get('entity_type.manager')
+// $this->database = $container->get('database')
+
+// ********************
+// using Entity API
+// ********************
+
+$storage = $this->entityManager->getStorage('visualnet_user');
+
+$query = $storage->getQuery()
+    ->condition('login', 'wkowalik81+test36@gmail.com')
+    ->execute();
+
+$result = array_keys($query);
+$user = $storage->load($result[0]);
+
+//var_dump($user->get('user_id')->entity);
+
+// ********************
+// using Database API
+// ********************
+
+$number = $this->database->select('visualnet_users')
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+//var_dump($number);
+
+$query = $this->database->select('visualnet_users', 'u')
+    ->condition('u.id', 0, '<>')
+    ->fields('u', ['login', 'password']);
+
+$result = $query->execute();
+
+foreach ($result as $record) {
+    var_dump($record);
+}

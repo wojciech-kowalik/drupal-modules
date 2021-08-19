@@ -1,0 +1,28 @@
+visualnet_content.program.events:
+    path: '/type/{eventType}'
+    defaults:
+        _controller: 'Drupal\visualnet_content\Controller\EventController::event'
+        _title: 'Event list page'
+    requirements:
+        _permission: 'access content'
+
+visualnet_content.get.event:
+    path: '/event/{eventId}'
+    defaults:
+        _controller: 'Drupal\visualnet_content\Controller\EventController::getEvent'
+    requirements:
+        _permission: 'access content'
+
+visualnet_content.get.events:
+    path: 'content/get/events'
+    defaults:
+        _controller: 'Drupal\visualnet_content\Controller\EventController::populateCrmEvents'
+    requirements:
+        _permission: 'access content'
+
+visualnet_content.get.section:
+    path: '/section/show/{id}'
+    defaults:
+        _controller: 'Drupal\visualnet_content\Controller\SectionController::show'
+    requirements:
+        _permission: 'access content'

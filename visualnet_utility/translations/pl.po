@@ -1,0 +1,50 @@
+msgid "Lorem ipsum"
+msgstr "Lorem ipsum"
+
+msgid "Add content"
+msgstr "Dodaj zawartość"
+
+msgid "Cache clear"
+msgstr "Wyczyść cache"
+
+msgid "Cache has been cleared"
+msgstr "Cache został wyczyszczony"
+
+msgid "Language has been changed"
+msgstr "Język został zmieniony"
+
+msgid "Manage Linkit profiles."
+msgstr "Zarządzanie profilami Linkit"
+
+msgid "Configure the responsive slideshow."
+msgstr "Dodaj i modyfikuj elementy slide"
+
+msgid "Buy ticket"
+msgstr "Kup bilet"
+
+msgid "Program"
+msgstr "Program"
+
+msgid "About festival"
+msgstr "O festiwalu"
+
+msgid "Regulations for the use of the website"
+msgstr "Regulamin korzystania ze strony www"
+
+msgid "An error occurred while adding to the newsletter"
+msgstr "Wystąpił błąd podczas dodawania do newslettera"
+
+msgid "Subscribed to the newsletter"
+msgstr "Zapisano do newslettera"
+
+msgid "Enter e-mail"
+msgstr "Wpisz adres e-mail"
+
+msgid "Email address not correct"
+msgstr "Adres e-mail jest nieprawidłowy"
+
+msgid "This email address has already been assigned to the newsletter"
+msgstr "Ten adres email został już przypisany do newslettera"
+
+msgid "Apply"
+msgstr "Szukaj"

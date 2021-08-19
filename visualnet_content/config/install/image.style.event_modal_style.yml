@@ -1,0 +1,14 @@
+uuid: fbb9dc59-f33e-448d-8b91-bb6422b58141
+langcode: pl
+status: true
+dependencies: {  }
+name: event_modal_style
+label: 'Event modal style'
+effects:
+  d8607801-6d4c-4711-b8d2-7100e21e1fc0:
+    uuid: d8607801-6d4c-4711-b8d2-7100e21e1fc0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 203
+      height: 122

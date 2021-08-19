@@ -1,0 +1,38 @@
+add event entities:
+  title: 'Create new Event entities'
+
+administer event entities:
+  title: 'Administer Event entities'
+  description: 'Allow to access the administration form to configure Event entities.'
+  restrict access: true
+
+delete event entities:
+  title: 'Delete Event entities'
+
+edit event entities:
+  title: 'Edit Event entities'
+
+view published event entities:
+  title: 'View published Event entities'
+
+view unpublished event entities:
+  title: 'View unpublished Event entities'
+add visualnet crm event entities:
+  title: 'Create new Visualnet crm event entities'
+
+administer visualnet crm event entities:
+  title: 'Administer Visualnet crm event entities'
+  description: 'Allow to access the administration form to configure Visualnet crm event entities.'
+  restrict access: true
+
+delete visualnet crm event entities:
+  title: 'Delete Visualnet crm event entities'
+
+edit visualnet crm event entities:
+  title: 'Edit Visualnet crm event entities'
+
+view published visualnet crm event entities:
+  title: 'View published Visualnet crm event entities'
+
+view unpublished visualnet crm event entities:
+  title: 'View unpublished Visualnet crm event entities'

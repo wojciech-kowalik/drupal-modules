@@ -1,0 +1,7 @@
+name: 'Visualnet Utility'
+type: module
+description: 'Visualnet Utility'
+core: 8.x
+package: 'Custom'
+'interface translation project': visualnet_utility
+'interface translation server pattern': 'modules/custom/%project/translations/%language.po'

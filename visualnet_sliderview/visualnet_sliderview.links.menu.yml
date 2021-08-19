@@ -1,0 +1,6 @@
+visualnet_sliderview.settings:
+  route_name: visualnet_sliderview.settings
+  title: 'Visualnet Sliderview'
+  description: 'Configure slider view'
+  parent: system.admin_config_content
+  weight: 102

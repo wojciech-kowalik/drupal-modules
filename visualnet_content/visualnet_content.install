@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Visualnet Content module.
+ */
+
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ */
+function visualnet_content_install() {
+
+    $vocTypes    = "event_types";
+    $vodSections = "event_sections";
+    $eventTypes    = [
+        'movie',
+        'meeting',
+    ];
+    $eventSections = [
+        'pathfinding',
+    ];
+
+    foreach ($eventTypes as $term) {
+        Term::create([
+            'name'   => $term,
+            'vid'    => $vocTypes,
+        ])->save();
+    }
+
+    foreach ($eventSections as $term) {
+        Term::create([
+            'name'   => $term,
+            'vid'    => $vodSections,
+        ])->save();
+    }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function visualnet_content_uninstall() {
+
+    $image_style = ImageStyle::load('node_image_style');
+    $image_style->delete();
+
+    $image_style = ImageStyle::load('node_teaser_image_style');
+    $image_style->delete();
+
+    $image_style = ImageStyle::load('event_image_style');
+    $image_style->delete();
+
+    $image_style = ImageStyle::load('event_modal_style');
+    $image_style->delete();
+
+    drupal_flush_all_caches();
+}
+
+

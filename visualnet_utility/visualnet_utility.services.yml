@@ -1,0 +1,5 @@
+services:
+
+  visualnet.utility_service:
+    class: Drupal\visualnet_utility\Service\UtilityService
+    arguments: ['@entity_type.manager', '@visualnet.api_service']

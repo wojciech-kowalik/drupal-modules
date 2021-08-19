@@ -1,0 +1,36 @@
+{{ include('@visualnet_user/nav.html.twig', {tab: 'order'}) }}
+
+<div class="tab-content">
+    <div class="tab-pane active">
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Kod</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Cena</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for order in data %}
+                <tr>
+                    <td>{{ order.getBarcode }}</td>
+                    <td>
+                        {% if order.getCreatedAt %}
+                            {{ order.getCreatedAt|date("d.m.Y H:i") }}
+                        {% else %}
+                            <span class="error-color fas fa-times-circle"></span>
+                        {% endif %}
+                    </td>
+                    <td>{{ order.getStatusName }}</td>
+                    <td>{{ order.getAmount }} zł</td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

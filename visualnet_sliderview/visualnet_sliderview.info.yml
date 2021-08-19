@@ -1,0 +1,9 @@
+name: 'Visualnet Sliderview'
+type: module
+description: 'Module that provides slider view for articles, news and guests'
+core: 8.x
+package: 'Custom'
+'interface translation project': visualnet_sliderview
+'interface translation server pattern': 'modules/custom/%project/translations/%language.po'
+dependencies:
+  - visualnet_utility

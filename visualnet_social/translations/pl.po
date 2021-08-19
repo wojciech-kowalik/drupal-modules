@@ -1,0 +1,32 @@
+msgid "Lorem ipsum"
+msgstr "lorem ipsum"
+
+msgid "Youtube playlist id"
+msgstr "Identyfikator playlisty Youtube"
+
+msgid "Youtube key value"
+msgstr "Wartość klucza Youtube"
+
+msgid "Maximum number of Youtube results"
+msgstr "Maksymalna liczba wyników z Youtube"
+
+msgid "Configure social media"
+msgstr "Konfigurowanie danych social media"
+
+msgid "Festival television"
+msgstr "Telewizja festiwalowa"
+
+msgid "Youtube configuration"
+msgstr "Konfiguracja Youtube"
+
+msgid "Festival televison"
+msgstr "Telewizja festiwalowa"
+
+msgid "Tv festival"
+msgstr "Tv festiwalowa"
+
+msgid "Widget configuration"
+msgstr "Konfiguracja widgetu"
+
+msgid "Type of visible social media"
+msgstr "Dostępne typy mediów"

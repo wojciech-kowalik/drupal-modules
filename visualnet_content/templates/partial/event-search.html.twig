@@ -1,0 +1,36 @@
+<div class="menu-event-buttons">
+
+  <div class="col-xs-12 lower-buttons">
+    <a class="button smaller {% if sort_field == 'name' %}active{% endif %}" href="?field=name&dir=asc">
+      <span class="fas fa-long-arrow-alt-down"></span> {{ 'A-Z' |t }}
+    </a>
+    <a class="button smaller {% if sort_field == 'section_name' %}active{% endif %}" href="?field=section_name&dir=asc">
+      <span class="fas fa-long-arrow-alt-down"></span> {{ 'Sections' |t }}
+    </a>
+    <a class="button smaller" href="/type/movie">
+      <span class="fas fa-times"></span> {{ 'Clear filter' |t }}
+    </a>
+  </div>
+
+  <div class="view-filters form-group event-search">
+
+    <form class="views-exposed-form" data-drupal-selector="views-exposed-form-test-page-1" action="{{ entities[0].events[0].language_prefix }}/type/{{ type }}"
+      method="get" id="views-exposed-form-test-page-1" accept-charset="UTF-8" data-drupal-form-fields="edit-name,edit-submit-test">
+
+      <div class="form--inline form-inline clearfix">
+        <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-name js-form-item-name form-no-label form-group">
+          <input data-drupal-selector="edit-name" class="form-text form-control" type="text" id="edit-name" name="name" value="{{ options.name }}" size="30"
+            maxlength="128">
+        </div>
+
+        <div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions">
+          <button data-drupal-selector="edit-submit-test" class="button js-form-submit form-submit btn-info off-button smaller btn"
+            type="submit" id="edit-submit-test" value="Apply" name="">{{ 'Search movie'|t }}</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

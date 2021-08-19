@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - visualnet_content
+name: Event Sections
+vid: event_sections
+description: 'Sections of Event'
+hierarchy: 0
+weight: 0

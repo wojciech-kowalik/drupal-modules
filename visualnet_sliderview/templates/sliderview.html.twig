@@ -1,0 +1,78 @@
+
+
+<div class="{{ node }}">
+
+<div class="container">
+    <div class="header">{{ title }}</div>
+</div>
+
+    <div id="{{ node }}" class="carouseller">
+
+        <a href="javascript:void(0)" class="carouseller__left">
+            <img src="/themes/off_camera/images/svg/arrow-l-gray.svg">
+        </a>
+
+        <div class="carouseller__wrap">
+            <div class="carouseller__list">
+
+                {% for entity in entities %}
+                    <div class="car__4">
+
+                        <a href="{{ entity.url }}">
+
+                            <div class="row item">
+
+                                <div class="col-xs-6 image">
+                                    <img src="{{ entity.image.src }}" alt="{{ entity.image.alt }}">
+                                </div>
+
+                                <div class="col-xs-6 content">
+                                    <div class="type">{{ title }}</div>
+                                    <div class="title">{{ entity.title }}</div>
+                                    <div class="date">{{ entity.date|date('d.m.Y') }}</div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" class="carouseller__right" >
+            <img src="/themes/off_camera/images/svg/arrow-r-gray.svg">
+        </a>
+
+    </div>
+
+<div class="container">
+
+    <div class="more-button">
+
+        <div class="row">
+            <div class="col-xs-12 content">
+
+                {% if node != 'guest' %}
+                    <a href="{{ language_prefix }}/{{ node }}">
+                        <button>{{ 'Show all'|t }} {{ title }}</button>
+                    </a>
+                {% else %}
+                    <a href="{{ language_prefix }}/{{ node }}">
+                        <button>{{ 'Show all guests'|t }}</button>
+                    </a>
+                {% endif %}
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+
